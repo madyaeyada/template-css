@@ -1,0 +1,212 @@
+ /* ----------------------------------------------------------------
+ 1-nav 
+  2-ourteam
+  3-ourwork
+ -------------------------------------------
+ */ 
+
+*{
+    margin: 0;padding:0;
+}
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;} 
+/* 1-nav */
+header ,nav{
+    display:flex; color:white;background-color:black ;
+    justify-content: space-between;
+   
+} 
+nav li{
+   list-style-type: none;
+   padding: 10px;
+  
+
+}nav li a{
+    text-decoration: none;
+    color:rgb(255, 252, 252);
+}
+.dropdown{
+    margin-top: 10px;
+}
+.droplist{
+    background-color: rgb(99, 96, 96);
+    color:rgb(255, 252, 252);
+    display: flex;
+    position: absolute;
+    margin-left: 30px;width: 150px;
+    margin-top: 10px; 
+    visibility: hidden;
+}
+.droplist a{color: #fff;}
+.dropdown:hover + .droplist {
+      visibility:visible;
+}
+.fa-caret-down{color:teal;}
+
+
+ a{
+    text-decoration: none;
+    color:white;padding: 12px;
+    display: inline-block;
+} 
+a:hover{background-color: rgb(160, 153, 153);}
+.logo{
+    background-color: teal;
+
+} a:hover{
+    background-color: rgb(195, 187, 187);color: #fff;
+}
+
+.home{
+    width: 10px;
+    height: 10px;
+}.icon{
+    width:20px;color: teal;
+    margin: 19px 10px 0 0;
+    height:20px;
+}
+/* --------------------------------------------------------
+   2-ourteam
+--------------------------------------------- */
+.textHeader{
+    margin-left:30px;
+ background-color: teal;
+ position:relative;display: inline-block;
+bottom:90px;
+}
+
+.ourTeamheader{
+    text-align: center;
+    padding: 20px;
+} 
+.ourTeam{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    padding: 30px;    line-height: 1.5;
+    text-align: center;
+ }
+ .imgteam{
+    border-radius: 50%;
+ }
+ /* --------------------------------
+3-ourwork
+------------------------------------ */
+
+ .ourwork
+ {display: flex;
+    background-color:rgb(41, 39, 39);
+    height: 550px;
+    padding: 18px;
+ }.workrleft{
+    width: 25%;
+
+     
+ }.workright{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    float: right;
+    
+ }
+
+ .itemwork{
+    width: 30%;height: 390px;
+    background-color: #fff;
+   
+
+ }.itemwork p, .itemwork h3 {padding: 10px;}
+ .imgitem{
+    width: 100%;
+    
+ }
+
+ /* ---------------------------------------
+ 
+        4- pricing
+           basic
+ ----------------------------------- */
+.allbasic{
+    display: flex;justify-content: space-around;
+}
+ .basic{
+    border:1px solid rgb(26, 24, 24);
+    width: 25%;
+    margin: 20px;
+   text-align: center;
+ }
+ .basic:hover{
+    box-shadow: 5px 5px 12px  rgb(120, 118, 118);
+ }.basic h4{
+    background-color: #000;
+    color: #fff;padding: 15px;
+ }.basic p{
+    border:1px solid rgb(26, 24, 24);
+    padding: 10px 0;
+ }
+ .sign{
+    background-color:teal;color: aliceblue;
+ }
+ /* -------------------------------------------------
+     5-contact
+ ----------------------------------------------- */
+ .contact{
+    background-color: rgb(231, 217, 217);
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+ }.conleft h1{
+    text-decoration: underline 9px teal;
+
+
+}.conright{
+    background-color: #fff;
+    width: 400px;box-shadow: 5px 5px 12px gray;
+    padding: 20px;
+
+
+}.conright input{
+   width: 90%;
+   padding: 20px;border: none;
+   border-bottom: 1px solid gray;
+
+}.btn{
+   background-color:teal ; color:rgb(232, 249, 249);
+   padding: 10px;
+   border-radius: 20px;
+   top:46px;left: 10px;
+
+} 
+ .btnCheck label{
+   position: relative;
+   right: 20px;
+ 
+  
+}
+
+/* --------------------------------------------------------------
+
+5-mapimg
+
+-----------------------------------*/
+.mapimg{
+width:100%;  min-height:auto;
+}
+/* ----------------------
+  7-footer
+------------------------- */
+footer{
+    
+    text-align: center;margin-bottom: 10px;
+    background-color: #000;color: #fff;padding: 30px;
+}
+footer a{
+    background-color:teal;
+  text-align: center;
+}
+footer a:hover{
+    background-color: rgb(213, 206, 206);
+}
+.social{text-align: center;}
